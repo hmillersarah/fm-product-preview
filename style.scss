@@ -10,10 +10,17 @@ $footer-color: hsl(228, 45%, 44%);
 // Fonts
 $font-primary: 'Montserrat';
 $font-secondary: 'Fraunces';
-$text-base-size: 1.4rem;
-$heading-size: $text-base-size * 2.2;
-$text-base-weight: 600;
-$heading-weight: 800;
+    // Font sizes mobile
+    $text-base-size: 1.4rem;
+    $heading-size: 3rem;
+    $subheading-size: 1.1rem;
+    // Font sizes desktop
+    $text-base-size-lg: 1.8rem;
+    $heading-size-lg: 4.2rem;
+    $subheading-size-lg: 1.4rem;
+    // Font weights
+    $text-base-weight: 600;
+    $heading-weight: 800;
 // Spacing
 $baseline: 2.4rem;
 
@@ -27,10 +34,10 @@ body {
     font-weight: $text-base-size;
     color: $neutral-color-2;
     background-color: $primary-color-2;
-    display: flex;
-    flex-direction: column;
-    align-self: center;
-    justify-content: center;
+    // display: flex;
+    // flex-direction: column;
+    // align-self: center;
+    // justify-content: center;
     margin: 0;
 }
 
@@ -47,7 +54,7 @@ main {
     border-radius: 1rem;
 }
 
-img {
+.hero {
     border-radius: 1rem 1rem 0rem 0rem;
     width: 100%;
 }
@@ -73,7 +80,7 @@ h2 {
 }
 
 h3 {
-    font-size: $text-base-size;
+    font-size: $subheading-size;
     font-weight: $text-base-size;
     text-transform: uppercase;
     letter-spacing: 0.5ch;
@@ -90,7 +97,6 @@ p {
     align-items: center;
 }
 
-
 .reduced {
     text-decoration: line-through;
 }
@@ -100,18 +106,45 @@ button {
     color: $neutral-color-3;
     border-radius: 0.75rem;
     border: none;
-    padding: 1.6rem;
+    padding: 0.5rem;
     font-family: $font-primary;
     font-weight: $text-base-weight;
     margin: 1rem 0rem;
     width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+
+    img {
+        width: 1.6rem;
+    }
 }
 
 .attribution { 
     font-size: 1.1rem; 
     text-align: center; 
+
+    a { 
+        color: $footer-color;
+    }
 }
 
-.attribution a { 
-    color: $footer-color;
+@media screen and (min-width: 1440px) {
+    .card {
+        display: flex;
+        flex-direction: row;
+        width: 40%;
+    }
+
+    .hero {
+        height: 100%;
+        object-fit: cover;
+        border-radius: 1rem 0rem 0rem 1rem;
+    }
+
+    .content {
+        padding: 4rem;
+    }
 }
