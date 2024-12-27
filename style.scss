@@ -34,10 +34,11 @@ body {
     font-weight: $text-base-size;
     color: $neutral-color-2;
     background-color: $primary-color-2;
-    // display: flex;
-    // flex-direction: column;
-    // align-self: center;
-    // justify-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
     margin: 0;
 }
 
@@ -51,6 +52,7 @@ main {
     background-color: $neutral-color-3;
     width: 90%;
     margin: 2rem;
+    padding: 0;
     border-radius: 1rem;
 }
 
@@ -132,19 +134,47 @@ button {
 }
 
 @media screen and (min-width: 1440px) {
+    
     .card {
         display: flex;
         flex-direction: row;
-        width: 40%;
+        align-items: center;
+        width: 50%;
+        font-size: $text-base-size-lg;
     }
 
     .hero {
-        height: 100%;
-        object-fit: cover;
+        height: 50%;
+        width: 50%;
         border-radius: 1rem 0rem 0rem 1rem;
+        object-fit: cover;
     }
 
     .content {
-        padding: 4rem;
+        width: 60%;
+        padding: 5rem;
+    }
+
+    h1, h2 {
+        font-size: $heading-size-lg;
+        margin-bottom: 2rem;
+    }
+
+    h3 {
+        font-size: $subheading-size-lg;
+        margin-bottom: 3rem;
+    }
+
+    p {
+        margin: 2rem 0rem;
+    }
+
+    button {
+        font-size: $text-base-size-lg;
+        margin-top: 2rem;
+
+        img {
+            width: 2rem;
+        }
     }
 }
