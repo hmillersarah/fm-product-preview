@@ -18,7 +18,6 @@ body {
 
 main {
   display: flex;
-  align-items: center;
   justify-content: center;
 }
 
@@ -31,6 +30,10 @@ main {
 }
 
 .hero {
+  padding: 0;
+  margin: 0;
+}
+.hero img {
   border-radius: 1rem 1rem 0rem 0rem;
   width: 100%;
 }
@@ -114,8 +117,12 @@ button img {
     font-size: 1.8rem;
   }
   .hero {
-    height: 50%;
-    width: 50%;
+    height: 100%;
+    width: 75%;
+  }
+  .hero img {
+    height: 100%;
+    width: 100%;
     border-radius: 1rem 0rem 0rem 1rem;
     object-fit: cover;
   }
