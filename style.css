@@ -100,6 +100,10 @@ button img {
   width: 1.6rem;
 }
 
+button:hover {
+  background-color: hsl(158, 36%, 25%);
+}
+
 .attribution {
   font-size: 1.1rem;
   text-align: center;
@@ -140,6 +144,9 @@ button img {
   }
   p {
     margin: 2rem 0rem;
+  }
+  .reduced {
+    padding-bottom: 3rem;
   }
   button {
     font-size: 1.8rem;

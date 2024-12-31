@@ -2,6 +2,7 @@
 // ------------------------------------
 // Colors
 $primary-color-1: hsl(158, 36%, 37%);
+$primary-color-hover: hsl(158, 36%, 25%);
 $primary-color-2: hsl(30, 38%, 92%);
 $neutral-color-1: hsl(212, 21%, 14%);
 $neutral-color-2: hsl(228, 12%, 48%);
@@ -129,6 +130,10 @@ button {
     }
 }
 
+button:hover {
+    background-color: $primary-color-hover;
+}
+
 .attribution { 
     font-size: 1.1rem; 
     text-align: center; 
@@ -177,6 +182,10 @@ button {
 
     p {
         margin: 2rem 0rem;
+    }
+
+    .reduced {
+        padding-bottom: 3rem;
     }
 
     button {
